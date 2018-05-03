@@ -73,6 +73,7 @@
             this.surnameTextBox.Name = "surnameTextBox";
             this.surnameTextBox.Size = new System.Drawing.Size(124, 20);
             this.surnameTextBox.TabIndex = 3;
+            this.surnameTextBox.TextChanged += new System.EventHandler(this.surnameTextBox_TextChanged);
             // 
             // cancelButton
             // 

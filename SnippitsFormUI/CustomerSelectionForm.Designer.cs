@@ -44,6 +44,7 @@
             this.CustomerListBox.Name = "CustomerListBox";
             this.CustomerListBox.Size = new System.Drawing.Size(440, 212);
             this.CustomerListBox.TabIndex = 0;
+            this.CustomerListBox.SelectedIndexChanged += new System.EventHandler(this.CustomerListBox_SelectedIndexChanged);
             // 
             // editCustomerButton
             // 

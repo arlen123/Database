@@ -32,5 +32,9 @@ namespace SnippitsFormUI
 
     public class Customer
     {
+        public string Email { get; internal set; }
+        public object FirstName { get; internal set; }
+        public string PhoneNumber { get; internal set; }
+        public string SurName { get; internal set; }
     }
 }
