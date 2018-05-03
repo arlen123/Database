@@ -84,6 +84,7 @@
             this.cancelButton.TabIndex = 4;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // acceptButton
             // 
@@ -94,6 +95,7 @@
             this.acceptButton.TabIndex = 5;
             this.acceptButton.Text = "Accept";
             this.acceptButton.UseVisualStyleBackColor = true;
+            this.acceptButton.Click += new System.EventHandler(this.acceptButton_Click);
             // 
             // emailLabel
             // 
@@ -145,6 +147,7 @@
             this.appointmentsListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.appointmentsListBox.Size = new System.Drawing.Size(380, 95);
             this.appointmentsListBox.TabIndex = 11;
+            this.appointmentsListBox.SelectedIndexChanged += new System.EventHandler(this.appointmentsListBox_SelectedIndexChanged);
             // 
             // CustomerForm
             // 
@@ -153,7 +156,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(389, 224);
+            this.ClientSize = new System.Drawing.Size(410, 239);
             this.Controls.Add(this.appointmentsListBox);
             this.Controls.Add(this.appointmentsLabel);
             this.Controls.Add(this.phoneNumberLabel);

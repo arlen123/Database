@@ -1,12 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace SnippitsFormUI
 {
+    
+
     public partial class MainForm : Form
     {
+
+        public List<Customer> customers = null;
+
         public MainForm()
         {
+            customers = new List<Customer>();
             InitializeComponent();
         }
 
@@ -21,5 +28,9 @@ namespace SnippitsFormUI
             StylistSelectionForm form = new StylistSelectionForm();
             form.ShowDialog();
         }
+    }
+
+    public class Customer
+    {
     }
 }

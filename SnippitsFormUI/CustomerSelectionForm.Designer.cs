@@ -53,6 +53,7 @@
             this.editCustomerButton.TabIndex = 1;
             this.editCustomerButton.Text = "Edit Selected Customer";
             this.editCustomerButton.UseVisualStyleBackColor = true;
+            this.editCustomerButton.Click += new System.EventHandler(this.editCustomerButton_Click);
             // 
             // addNewCustomerButton
             // 
@@ -62,6 +63,7 @@
             this.addNewCustomerButton.TabIndex = 2;
             this.addNewCustomerButton.Text = "Add New Customer";
             this.addNewCustomerButton.UseVisualStyleBackColor = true;
+            this.addNewCustomerButton.Click += new System.EventHandler(this.addNewCustomerButton_Click);
             // 
             // searchButton
             // 
@@ -87,13 +89,14 @@
             this.bookAppointmentButton.TabIndex = 5;
             this.bookAppointmentButton.Text = " Book Appointment";
             this.bookAppointmentButton.UseVisualStyleBackColor = true;
+            this.bookAppointmentButton.Click += new System.EventHandler(this.bookAppointmentButton_Click);
             // 
             // CustomerSelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(429, 262);
+            this.ClientSize = new System.Drawing.Size(429, 279);
             this.Controls.Add(this.bookAppointmentButton);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.searchButton);

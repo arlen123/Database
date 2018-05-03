@@ -13,9 +13,22 @@ namespace SnippitsFormUI
 {
     public partial class BookAppointmentForm : Form
     {
+
+
         public BookAppointmentForm()
         {
             InitializeComponent();
+        }
+
+        private void availableAppointmentsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void BookAppointmentForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

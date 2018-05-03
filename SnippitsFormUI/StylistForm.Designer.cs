@@ -181,7 +181,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(468, 325);
+            this.ClientSize = new System.Drawing.Size(481, 332);
             this.Controls.Add(this.balanceLabel);
             this.Controls.Add(this.transactionsListBox);
             this.Controls.Add(this.transactionsLabel);
