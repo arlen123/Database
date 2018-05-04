@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SnippitsBusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -11,8 +12,14 @@ namespace SnippitsFormUI
          
         public CustomerSelectionForm()
         {
-            customers = new List<Customer>();
+            string error = "";
+            customers = CustomerLoader.LoadFromCSV("Customers.txt", out error);
+            if(customers == null)
+            {
+                MessageBox.Show(error);
+            }
             InitializeComponent();
+
         }
 
 
@@ -33,7 +40,7 @@ namespace SnippitsFormUI
         }
 
         private void editCustomerButton_Click(object sender, EventArgs e)
-        {
+        { 
             Customer customer = (Customer)CustomerListBox.SelectedItem;
             CustomerForm form = new CustomerForm(customer);
             form.ShowDialog();
@@ -55,6 +62,11 @@ namespace SnippitsFormUI
         private void CustomerListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

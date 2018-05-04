@@ -2,25 +2,25 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
+
 namespace SnippitsFormUI
 {
     public partial class CustomerForm : Form
     {
         private Customer m_Customer = null;
 
-
-
         public Customer GetCustomer()
         {
             return m_Customer;
         }
-        
-  
 
         public CustomerForm()
         {
 
             InitializeComponent();
+
+
+
         }
 
         public CustomerForm(Customer pCustomer):this()
@@ -50,9 +50,24 @@ namespace SnippitsFormUI
             m_Customer.FirstName = firstNameTextBox.Text;
             m_Customer.SurName = surnameTextBox.Text;
             m_Customer.Email = emailTextBox.Text;
-            
+
             this.Close();
         }
+
+            //string allErrors = "";
+           // if (m_Customer == null)
+           // {
+
+                    //  string error = "";
+                 //   m_Customer = Customer.MakeCustomer(firstNameTextBox.Text, surnameTextBox.Text, emailTextBox.Text, phoneNumberTextBox.Text, out error);
+
+               // }
+              // else
+             // {
+            //    string error = "";
+            //     if(!m_Customer.Vall)
+           // }
+           // }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
@@ -60,6 +75,11 @@ namespace SnippitsFormUI
         }
 
         private void surnameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phoneNumberTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

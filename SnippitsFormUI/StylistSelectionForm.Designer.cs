@@ -62,6 +62,7 @@
             this.addNewStylistButton.TabIndex = 7;
             this.addNewStylistButton.Text = "Add New Stylist";
             this.addNewStylistButton.UseVisualStyleBackColor = true;
+            this.addNewStylistButton.Click += new System.EventHandler(this.addNewStylistButton_Click_1);
             // 
             // editStylistButton
             // 
@@ -71,6 +72,7 @@
             this.editStylistButton.TabIndex = 6;
             this.editStylistButton.Text = "Edit Selected Stylist";
             this.editStylistButton.UseVisualStyleBackColor = true;
+            this.editStylistButton.Click += new System.EventHandler(this.editStylistButton_Click);
             // 
             // StylistListBox
             // 
@@ -80,6 +82,7 @@
             this.StylistListBox.Name = "StylistListBox";
             this.StylistListBox.Size = new System.Drawing.Size(457, 212);
             this.StylistListBox.TabIndex = 5;
+            this.StylistListBox.SelectedIndexChanged += new System.EventHandler(this.StylistListBox_SelectedIndexChanged);
             // 
             // bookChairButton
             // 

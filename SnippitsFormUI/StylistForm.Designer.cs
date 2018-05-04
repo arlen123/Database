@@ -86,6 +86,7 @@
             this.acceptButton.TabIndex = 15;
             this.acceptButton.Text = "Accept";
             this.acceptButton.UseVisualStyleBackColor = true;
+            this.acceptButton.Click += new System.EventHandler(this.acceptButton_Click_1);
             // 
             // cancelButton
             // 
@@ -97,6 +98,7 @@
             this.cancelButton.TabIndex = 14;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // surnameTextBox
             // 
@@ -164,6 +166,7 @@
             this.transactionsListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.transactionsListBox.Size = new System.Drawing.Size(464, 160);
             this.transactionsListBox.TabIndex = 23;
+            this.transactionsListBox.SelectedIndexChanged += new System.EventHandler(this.transactionsListBox_SelectedIndexChanged);
             // 
             // balanceLabel
             // 
@@ -201,7 +204,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StylistForm";
-            this.Text = "Stylist Information";
+            this.Text = "n";
             this.ResumeLayout(false);
             this.PerformLayout();
 

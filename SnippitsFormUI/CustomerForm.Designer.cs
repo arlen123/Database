@@ -120,6 +120,7 @@
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.Size = new System.Drawing.Size(299, 20);
             this.phoneNumberTextBox.TabIndex = 8;
+            this.phoneNumberTextBox.TextChanged += new System.EventHandler(this.phoneNumberTextBox_TextChanged);
             // 
             // phoneNumberLabel
             // 
